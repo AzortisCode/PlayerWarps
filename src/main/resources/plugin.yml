@@ -1,0 +1,25 @@
+name: PlayerWarps
+version: ${project.version}
+main: com.azortis.playerwarps.PlayerWarps
+api-version: 1.13
+prefix: PW
+softdepend: [Vault]
+authors: [X1XX, YourPalJake]
+description: A player warp plugin.
+permissions:
+  warp.default:
+    description: The permission needed to warp to other players warps.
+  warp.set:
+    description: The permission needed to set warps. Add warp.set.<number> to add multiple warps.
+  warp.settings:
+    description: The permission needed to edit a warp's settings such as cost to warp, who can warp, etc.
+  warp.admin:
+    description: The permission needed to edit a warp without the original user's permission.
+  warp.settings.cost:
+    description: The permission needed to edit the cost to teleport to a certain warp.
+  warp.settings.blacklist:
+    description: The permission needed to blacklist who can warp.
+  warp.settings.whitelist:
+    description: The permission needed to whitelist who can warp.
+  warp.cost:
+    description: The permission used to override the default cost of a warp.

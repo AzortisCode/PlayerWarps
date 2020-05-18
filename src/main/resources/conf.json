@@ -1,0 +1,20 @@
+{
+  "economyIntegration": true,
+  "warpDefaults": {
+    "defaultCreationCost": 0,
+    "defaultWarpCost": 0,
+    "defaultMaxWarps": 1
+  },
+  "customization": {
+    "particles": true,
+    "mainMenuTitle": "&6Warps"
+  },
+  "storageSettings": {
+    "address": "127.0.0.1:3306",
+    "database": "",
+    "username": "",
+    "password": "",
+    "warpsTablePrefix": "playerwarps_"
+  },
+  "fileVersion": 1.0
+}
