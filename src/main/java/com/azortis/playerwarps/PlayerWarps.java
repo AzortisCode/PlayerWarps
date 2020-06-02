@@ -10,14 +10,12 @@ import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class PlayerWarps extends JavaPlugin {
+
     private VaultHook vaultHook;
     private InventoryManager inventoryManager;
     private SettingsManager settingsManager;
     private StorageManager storageManager;
 
-    public StorageManager getStorageManager() {
-        return storageManager;
-    }
 
     @Override
     public void onEnable() {
@@ -47,6 +45,10 @@ public final class PlayerWarps extends JavaPlugin {
         getLogger().info("Closing all inventories.");
         inventoryManager.closeInventories();
         storageManager.closeConnections();
+    }
+
+    public StorageManager getStorageManager() {
+        return storageManager;
     }
 
     public VaultHook getVaultHook() {
